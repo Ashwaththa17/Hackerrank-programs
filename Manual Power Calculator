@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner scanner = new Scanner(System.in);
+        int base= scanner.nextInt(), exponent= scanner.nextInt();
+        int power=1;
+        for(int i=1;i<=exponent;i++){
+            power=power*base;
+        }
+        System.out.println(power);
+    }
+}
